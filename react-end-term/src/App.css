@@ -1,0 +1,69 @@
+body {
+  background-color: rgb(192, 185, 185);
+  color: white;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.square {
+  background: #fff;
+  float: left;
+  font-size: 50px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 80px;
+  line-height: 80px;
+  height: 80px;
+  display: inline-block;
+    text-decoration: none;
+    color: rgb(50, 206, 36);
+    font-weight: bold;
+    margin: 0px;
+    border: 5px solid #000000;
+   
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(0, 0, 0)),
+        color-stop(1, rgb(236, 42, 42))
+    );
+    
+   
+ 
+ }
+
+ 
+ /* Board */
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+ }
+ /* Game */
+.game {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;  
+ }
+ /* Game Info */
+ul {
+  padding-left: 30px;
+ }
+ .game-info {
+  margin-left: 20px;
+ }
+ .status {
+  margin-bottom: 10px;
+ }
+ 
